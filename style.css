@@ -1,0 +1,165 @@
+body {
+  margin: 0px;
+  background-color: hsl(27, 66%, 92%);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(33, 100%, 98%);
+}
+
+p {
+  margin: 10px 0px;
+}
+
+.main-container {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.balance-total-container {
+  margin: 0px 15px;
+  width: 460px;
+  padding: 30px 40px;
+  background-color: hsl(10, 79%, 65%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 20px;
+}
+
+.balance-total__amount {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.balance-data-container {
+  margin: 0px 15px;
+  margin-top: 25px;
+  width: 460px;
+  padding: 40px;
+  background-color: hsl(33, 100%, 98%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  color: hsl(25, 47%, 15%);
+  border-radius: 20px;
+}
+
+.balance-data__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.balance-data__chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chart__label-container {
+  width: 105%;
+  height: 40px;
+  align-self: center;
+
+  display: flex;
+  align-items: end;
+}
+
+.chart__label {
+  margin: 0px;
+  width: 100%;
+  height: 0px;
+  background-color: hsl(25, 47%, 15%);
+  color: hsl(33, 100%, 98%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  border-radius: 5px;
+}
+
+.chart__bar-chart-container {
+  display: flex;
+  gap: 5%;
+  align-items: end;
+}
+
+.bar-chart__bar {
+  width: 100%;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 5px;
+}
+
+.bar-chart__bar:hover {
+  cursor: pointer;
+}
+
+.chart__category-container {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+
+.chart__category {
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+  color: hsl(28, 10%, 53%);
+}
+
+hr {
+  width: 100%;
+  margin: 0px;
+  border-color: hsla(28, 10%, 53%, 0.25);
+}
+
+.balance-spending-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-spending-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+
+  justify-items: end;
+}
+
+.balance-spending__title {
+  color: hsl(28, 10%, 53%);
+  margin: 0px;
+}
+
+.balance-spending__amount {
+  margin: 0px;
+  grid-row: span 2;
+  justify-self: start;
+
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.balance-spending__percent {
+  margin: 0px;
+  align-self: end;
+  font-weight: 700;
+}
+
+.balance-spending__title {
+  margin: 0px;
+  align-self: start;
+}

@@ -12,6 +12,15 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
@@ -25,40 +34,47 @@
       </div>
       <div class="balance-data-container">
         <p class="balance-data__title">Spending - Last 7 days</p>
-        <div class="balance-data__label-container">
-          <p class="balance-data__label"></p>
-          <p class="balance-data__label"></p>
-          <p class="balance-data__label"></p>
-          <p class="balance-data__label"></p>
-          <p class="balance-data__label"></p>
-          <p class="balance-data__label"></p>
-          <p class="balance-data__label"></p>
+        <div class="balance-data__chart-container">
+          <div class="chart__label-container">
+            <p class="chart__label"></p>
+            <p class="chart__label"></p>
+            <p class="chart__label"></p>
+            <p class="chart__label"></p>
+            <p class="chart__label"></p>
+            <p class="chart__label"></p>
+            <p class="chart__label"></p>
+          </div>
+          <div class="chart__bar-chart-container">
+            <div class="bar-chart__bar"></div>
+            <div class="bar-chart__bar"></div>
+            <div class="bar-chart__bar"></div>
+            <div class="bar-chart__bar"></div>
+            <div class="bar-chart__bar"></div>
+            <div class="bar-chart__bar"></div>
+            <div class="bar-chart__bar"></div>
+          </div>
+          <div class="chart__category-container">
+            <p class="chart__category"></p>
+            <p class="chart__category"></p>
+            <p class="chart__category"></p>
+            <p class="chart__category"></p>
+            <p class="chart__category"></p>
+            <p class="chart__category"></p>
+            <p class="chart__category"></p>
+          </div>
         </div>
-        <div class="balance-data__bar-chart">
-          <div class="balance-data__bar"></div>
-          <div class="balance-data__bar"></div>
-          <div class="balance-data__bar"></div>
-          <div class="balance-data__bar"></div>
-          <div class="balance-data__bar"></div>
-          <div class="balance-data__bar"></div>
-          <div class="balance-data__bar"></div>
-        </div>
-        <div class="balance-data__category-container">
-          <p class="balance-data__category">mon</p>
-          <p class="balance-data__category">tue</p>
-          <p class="balance-data__category">wed</p>
-          <p class="balance-data__category">thu</p>
-          <p class="balance-data__category">fri</p>
-          <p class="balance-data__category">sat</p>
-          <p class="balance-data__category">sun</p>
-        </div>
-        <p class="balance-title">Total this month</p>
-        <div class="balance-container">
-          <p class="balance-amount">$478.33</p>
-          <p class="balance-percent">+2.4%</p>
-          <p class="balance-title">from last month</p>
+        <hr />
+        <div class="balance-spending-container">
+          <p class="balance-spending__title">Total this month</p>
+          <div class="balance-spending-text">
+            <p class="balance-spending__amount">$478.33</p>
+            <p class="balance-spending__percent">+2.4%</p>
+            <p class="balance-spending__title">from last month</p>
+          </div>
         </div>
       </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
