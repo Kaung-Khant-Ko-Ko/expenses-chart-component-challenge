@@ -23,7 +23,8 @@ p {
 
 .balance-total-container {
   margin: 0px 15px;
-  width: 460px;
+  max-width: 460px;
+  width: calc(100% - 110px);
   padding: 30px 40px;
   background-color: hsl(10, 79%, 65%);
 
@@ -42,7 +43,8 @@ p {
 .balance-data-container {
   margin: 0px 15px;
   margin-top: 25px;
-  width: 460px;
+  max-width: 460px;
+  width: calc(100% - 110px);
   padding: 40px;
   background-color: hsl(33, 100%, 98%);
 
@@ -79,6 +81,7 @@ p {
   margin: 0px;
   width: 100%;
   height: 0px;
+  overflow-y: hidden;
   background-color: hsl(25, 47%, 15%);
   color: hsl(33, 100%, 98%);
 
@@ -148,6 +151,7 @@ hr {
   margin: 0px;
   grid-row: span 2;
   justify-self: start;
+  align-self: center;
 
   font-size: 3rem;
   font-weight: 700;
@@ -162,4 +166,34 @@ hr {
 .balance-spending__title {
   margin: 0px;
   align-self: start;
+}
+
+@media (max-width: 481px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 451px) {
+  body {
+    font-size: 14px;
+  }
+
+  .balance-total__amount,
+  .balance-data__title,
+  .balance-spending__amount {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 12px;
+  }
+
+  .balance-total__amount,
+  .balance-data__title,
+  .balance-spending__amount {
+    font-size: 1.25rem;
+  }
 }

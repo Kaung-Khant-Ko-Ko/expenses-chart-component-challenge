@@ -29,8 +29,7 @@ fetch("./data.json")
     const chart_height = $(".chart__bar-chart-container").height();
 
     for (let j = 0; j < bars.length; j++) {
-      let pos = chart_height - bars[j].height();
-      labels[j].css("top", pos);
+      labels[j].css("top", chart_height - bars[j].height());
     }
   })
   .catch((error) => {
@@ -45,7 +44,7 @@ for (let k = 0; k < bars.length; k++) {
       } else {
         $(this).css("background-color", "hsla(10, 79%, 65%, 0.75)");
       }
-      labels[k].animate({ height: "40" });
+      labels[k].animate({ height: labels[k].width() / 1.75 });
     },
     function () {
       $(this).css("background-color", "hsl(10, 79%, 65%)");
